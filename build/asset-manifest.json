@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/creo-landing-page/static/css/main.49706175.css",
+    "main.js": "/creo-landing-page/static/js/main.819f85a1.js",
+    "static/media/Creo banner second version (1).mp4": "/creo-landing-page/static/media/Creo banner second version (1).d46076341a32ddca1bec.mp4",
+    "static/media/eq3.png": "/creo-landing-page/static/media/eq3.79677f9d14246c534cf5.png",
+    "static/media/eq1.png": "/creo-landing-page/static/media/eq1.10e9bb06ecd1d2159f77.png",
+    "static/media/eq2.png": "/creo-landing-page/static/media/eq2.ebe9b3cb013cf68f8421.png",
+    "static/media/ps.png": "/creo-landing-page/static/media/ps.ad1599d3421f177aaf8c.png",
+    "static/media/mr.png": "/creo-landing-page/static/media/mr.635fb1795875bed96ea2.png",
+    "static/media/cs.png": "/creo-landing-page/static/media/cs.19eb10b18db0918f44fe.png",
+    "static/media/phs.png": "/creo-landing-page/static/media/phs.1650f7f1cc798f5e5116.png",
+    "static/media/Poppins-Italic.ttf": "/creo-landing-page/static/media/Poppins-Italic.e373f6163127e2d469af.ttf",
+    "static/media/Poppins-BoldItalic.ttf": "/creo-landing-page/static/media/Poppins-BoldItalic.cfb635a5111b545f5598.ttf",
+    "static/media/Poppins-Light.ttf": "/creo-landing-page/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
+    "static/media/Poppins-Regular.ttf": "/creo-landing-page/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Bold.ttf": "/creo-landing-page/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/orange-line1.png": "/creo-landing-page/static/media/orange-line1.6082dcec6747abaecd3a.png",
+    "static/media/orange-line2.png": "/creo-landing-page/static/media/orange-line2.fa2200a6b9ebf7126d09.png",
+    "static/media/created-line.svg": "/creo-landing-page/static/media/created-line.9b2170fad4c99da93bf3a29880dd09d3.svg",
+    "static/media/blue-line2.svg": "/creo-landing-page/static/media/blue-line2.249f2b9d3ba4ef03745d48d5524e5961.svg",
+    "static/media/blue-line1.svg": "/creo-landing-page/static/media/blue-line1.9a897f02c6bd19328991cbb80a209eb0.svg",
+    "static/media/line-footer.svg": "/creo-landing-page/static/media/line-footer.9e7c0aa5e63cff526ad77b8bb205476e.svg",
+    "static/media/coworking-space.svg": "/creo-landing-page/static/media/coworking-space.8ffdbd46feefb891664696ceef2575ab.svg",
+    "static/media/created-to-create.svg": "/creo-landing-page/static/media/created-to-create.10de029901de70a0a7fabf393f191237.svg",
+    "static/media/logo.svg": "/creo-landing-page/static/media/logo.b786aaf1cd804cf9bd7e93140006c8e5.svg",
+    "static/media/podcast-studio.svg": "/creo-landing-page/static/media/podcast-studio.74395208c83ee13f1499e05c8c838f29.svg",
+    "static/media/meeting-room.svg": "/creo-landing-page/static/media/meeting-room.8441bdcc05437868bf3cf508d882715b.svg",
+    "static/media/photography-studio.svg": "/creo-landing-page/static/media/photography-studio.08b973851f7ac16ec7390f58aaa1fc16.svg",
+    "index.html": "/creo-landing-page/index.html",
+    "main.49706175.css.map": "/creo-landing-page/static/css/main.49706175.css.map",
+    "main.819f85a1.js.map": "/creo-landing-page/static/js/main.819f85a1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49706175.css",
+    "static/js/main.819f85a1.js"
+  ]
+}
