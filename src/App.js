@@ -32,7 +32,7 @@ and color temperature. "
         />
       </div>
     </div> */}
-    
+
       <Footer />
     </div>
   );
