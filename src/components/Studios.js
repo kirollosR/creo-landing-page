@@ -23,117 +23,144 @@ const Studios = () => {
   return (
     <div className="bg-primeColor text-white font-poppins">
       {/* First Section */}
-      <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-10 py-10 lg:py-20">
-        <img
-          src={line1}
-          alt="Background"
-          className="absolute -top-6 left-0 w-5/6 h-auto md:-top-52 md:w-1/2 lg:-top-20 lg:w-1/3"
-        />
-        <StudioCard
-          image1={podcastStudio}
-          image2={ps}
-          button={"STUDIO"}
-          description={
-            <>
-              A COMFORTABLE SPACE FOR HOSTING, RECORDING
-              <br />
-              AND PRODUCING PROFESSIONAL <b>AUDIO CONTENT</b>,<br />
-              EQUIPPED <b>WITH MICROPHONES AND RECORDER</b>.
-            </>
-          }
-        />
+      <div className="container mx-auto px-4 py-10 lg:py-20">
+        <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-8 lg:gap-10">
+          <img
+            src={line1}
+            alt="Background"
+            className="absolute -top-6 left-0 w-5/6 h-auto md:-top-52 md:w-1/2 lg:-top-20 lg:w-1/3"
+          />
 
-        {/* DIVIDER */}
-        <div className="h-1 w-20 mx-auto bg-secondColor lg:h-auto lg:w-0.5"></div>
-
-        {/* CONTENT SECTION */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-5 lg:px-10">
-          {/* Image and Paragraph Section */}
-          <div className="">
-            <div className="grid place-items-center lg:place-items-start">
-              <img
-                src={photographyStudio}
-                alt="Podcast Studio"
-                className="mb-8 w-48 lg:w-64 "
-              />
-              <p className="text-white mb-8 text-sm text-center lg:text-left">
-                <b>A FULLY</b> EQUIPPED <b>STUDIO</b> WITH
+          <StudioCard
+            image1={podcastStudio}
+            image2={ps}
+            button={"STUDIO"}
+            description={
+              <>
+                A COMFORTABLE SPACE FOR HOSTING, RECORDING
                 <br />
-                <b>LIGHTING</b>, CAMERAS, {" "}
-                <b>
-                  SETUP FOR <br />
-                  SHOTS
-                </b>
-              </p>
-              <a href="https://creocreatorclub.simplybook.me/v2/">
-                <button className="bg-secondColor text-white py-2 px-4 hover:bg-opacity-80 transition duration-300 w-40">
-                  BOOK YOUR SHOOT NOW
-                </button>
-              </a>
+                AND PRODUCING PROFESSIONAL <b>AUDIO CONTENT</b>,<br />
+                EQUIPPED <b>WITH MICROPHONES AND RECORDER</b>.
+              </>
+            }
+          />
+
+          {/* DIVIDER */}
+          <div className="h-1 w-20 mx-auto bg-secondColor lg:h-auto lg:w-0.5"></div>
+
+          {/* Photography Studio Section */}
+          <div className="container mx-auto">
+            <div className="flex flex-col md:grid md:grid-cols-2 gap-8 items-center">
+              {/* Image Section - Appears first on mobile */}
+              <div className="order-1 md:order-2 w-full flex justify-center">
+                <img
+                  src={phs}
+                  className="w-full max-w-[320px] h-auto"
+                  alt="Studio"
+                />
+              </div>
+
+              {/* Content Section */}
+              <div className="order-2 md:order-1 w-full">
+                <div className="flex flex-col items-center md:items-start">
+                  <img
+                    src={photographyStudio}
+                    alt="Photography Studio"
+                    className="w-full max-w-[256px] mb-8"
+                  />
+                  <p className="text-white mb-8 text-sm text-center md:text-left">
+                    <b>A FULLY</b> EQUIPPED <b>STUDIO</b> WITH
+                    <br />
+                    <b>LIGHTING</b>, CAMERAS,{" "}
+                    <b>
+                      SETUP FOR <br />
+                      SHOTS
+                    </b>
+                  </p>
+                  <a
+                    href="https://creocreatorclub.simplybook.me/v2/"
+                    className="inline-block"
+                  >
+                    <button className="bg-secondColor text-white py-2 px-4 hover:bg-opacity-80 transition duration-300 w-40">
+                      BOOK YOUR SHOOT NOW
+                    </button>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-          {/* Image Section */}
-          <div className="grid place-items-center">
-            <img src={phs} className="w-80 h-auto" alt="Studio" />
           </div>
         </div>
       </div>
 
       {/* Second Section */}
-      <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-10 py-20 lg:pt-40">
-        <img
-          src={line2}
-          alt="Background"
-          className="absolute inset-x-1/3 w-3/4 h-auto md:-top-8 md:w-1/2 lg:-top-20 lg:w-1/3"
-        />
-        <StudioCard
-          image1={coworkingSpace}
-          image2={cs}
-          button={"SPACE"}
-          description={
-            <>
-              IT’S NOT JUST A WORKING SPACE <b>IT’S A CREATIVE HUB </b>
-            </>
-          }
-        />
+      <div className="container mx-auto px-4 py-10 lg:py-20">
+        <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-8 lg:gap-10">
+          <img
+            src={line2}
+            alt="Background"
+            className="absolute inset-x-1/3 w-3/4 h-auto md:-top-8 md:w-1/2 lg:-top-20 lg:w-1/3"
+          />
 
-        {/* DIVIDER */}
-        <div className="h-1 w-20 mx-auto bg-secondColor lg:h-auto lg:w-0.5"></div>
+          <StudioCard
+            image1={coworkingSpace}
+            image2={cs}
+            button={"SPACE"}
+            description={
+              <>
+                IT'S NOT JUST A WORKING SPACE <b>IT'S A CREATIVE HUB </b>
+              </>
+            }
+          />
 
-        {/* CONTENT SECTION */}
-        <img
-          src={line3}
-          alt="Background"
-          className="absolute w-3/4 h-auto md:-bottom-80 md:w-1/4 lg:-bottom-96 lg:w-1/4"
-        />
-        <img
-          src={line4}
-          alt="Background"
-          className="absolute right-0 w-3/4 h-auto md:-bottom-56 md:w-1/4 lg:-bottom-40 lg:w-1/6"
-        />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-5 lg:px-10">
-          {/* Image and Paragraph Section */}
-          <div className="order-2 md:order-1">
-            <div className="grid place-items-center lg:place-items-start">
-              <img
-                src={meetingRoom}
-                alt="Podcast Studio"
-                className="mb-8 w-48 lg:w-64"
-              />
-              <p className="text-white mb-8 text-sm text-center lg:text-left">
-                <b>WE HELP YOU TURN</b> ANY IDEA, NO MATTER HOW <br />
-                BIG OR SMALL, <b>INTO YOUR BEST WORK YET</b>
-              </p>
-              <a href="https://creocreatorclub.simplybook.me/v2/">
-                <button className="bg-secondColor text-white py-2 px-4 hover:bg-opacity-80 transition duration-300 w-40">
-                  BOOK YOUR ROOM NOW
-                </button>
-              </a>
+          {/* DIVIDER */}
+          <div className="h-1 w-20 mx-auto bg-secondColor lg:h-auto lg:w-0.5"></div>
+
+          {/* Meeting Room Section */}
+          <div className="container mx-auto relative">
+            <img
+              src={line3}
+              alt="Background"
+              className="absolute w-3/4 h-auto md:-bottom-80 md:w-1/4 lg:-bottom-96 lg:w-1/4"
+            />
+            <img
+              src={line4}
+              alt="Background"
+              className="absolute right-0 w-3/4 h-auto md:-bottom-56 md:w-1/4 lg:-bottom-40 lg:w-1/6"
+            />
+
+            <div className="flex flex-col md:grid md:grid-cols-2 gap-8 items-center">
+              {/* Image Section - Appears first on mobile */}
+              <div className="order-1 md:order-2 w-full flex justify-center">
+                <img
+                  src={mr}
+                  className="w-full max-w-[320px] h-auto"
+                  alt="Studio"
+                />
+              </div>
+
+              {/* Content Section */}
+              <div className="order-2 md:order-1 w-full">
+                <div className="flex flex-col items-center md:items-start">
+                  <img
+                    src={meetingRoom}
+                    alt="Meeting Room"
+                    className="w-full max-w-[256px] mb-8"
+                  />
+                  <p className="text-white mb-8 text-sm text-center md:text-left">
+                    <b>WE HELP YOU TURN</b> ANY IDEA, NO MATTER HOW <br />
+                    BIG OR SMALL, <b>INTO YOUR BEST WORK YET</b>
+                  </p>
+                  <a
+                    href="https://creocreatorclub.simplybook.me/v2/"
+                    className="inline-block"
+                  >
+                    <button className="bg-secondColor text-white py-2 px-4 hover:bg-opacity-80 transition duration-300 w-40">
+                      BOOK YOUR ROOM NOW
+                    </button>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-          {/* Image Section */}
-          <div className="grid place-items-center order-2 md:order-2">
-            <img src={mr} className="w-80 h-auto" alt="Studio" />
           </div>
         </div>
       </div>
