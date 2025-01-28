@@ -22,12 +22,11 @@ import line4 from "../assets/studios/orange-line2.png";
 const Studios = () => {
   return (
     <div className="bg-primeColor text-white font-poppins">
-      {/* First Section */}
-      <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-10 py-10 lg:py-20">
-        <img
+      <div className="relative flex w-full flex-col lg:flex-row">
+      <img
           src={line1}
           alt="Background"
-          className="absolute -top-6 left-0 w-5/6 h-auto md:-top-52 md:w-1/2 lg:-top-20 lg:w-1/3"
+          className="absolute -top-6 left-0 w-5/6 h-auto md:-top-52 md:w-1/2"
         />
         <StudioCard
           image1={podcastStudio}
@@ -44,47 +43,49 @@ const Studios = () => {
         />
 
         {/* DIVIDER */}
-        <div className="h-1 w-20 mx-auto bg-secondColor lg:h-auto lg:w-0.5"></div>
+        <div className="divider h-1 w-20 mx-auto lg:divider-horizontal bg-secondColor lg:h-40 lg:w-0.5 lg:my-auto"></div>
 
         {/* CONTENT SECTION */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-5 lg:px-10">
+        <div className="card grid grid-cols-1 md:grid-cols-2">
           {/* Image and Paragraph Section */}
-          <div className="">
-            <div className="grid place-items-center lg:place-items-start">
+          <div className="card rounded-box flex-grow ml-5">
+            <div className="flex flex-col">
+              {" "}
+              {/* Stack image and paragraph vertically */}
               <img
                 src={photographyStudio}
                 alt="Podcast Studio"
-                className="mb-8 w-48 lg:w-64 "
+                className="mb-14 w-92"
               />
-              <p className="text-white mb-8 text-sm text-center lg:text-left">
+              <p className="text-white mb-14 text-sm">
                 <b>A FULLY</b> EQUIPPED <b>STUDIO</b> WITH
                 <br />
-                <b>LIGHTING</b>, CAMERAS, {" "}
+                <b>LIGHTING</b>, CAMERAS,{" "}
                 <b>
                   SETUP FOR <br />
                   SHOTS
                 </b>
               </p>
-              <a href="https://creocreatorclub.simplybook.me/v2/">
+              <a
+                href="https://creocreatorclub.simplybook.me/v2/" // External link
+              >
                 <button className="bg-secondColor text-white py-2 px-4 hover:bg-opacity-80 transition duration-300 w-40">
                   BOOK YOUR SHOOT NOW
                 </button>
               </a>
             </div>
           </div>
-          {/* Image Section */}
-          <div className="grid place-items-center">
-            <img src={phs} className="w-80 h-auto" alt="Studio" />
+          <div>
+            <img src={phs} className="w-80 h-auto ml-2 mr-10" alt="Studio" />
           </div>
         </div>
       </div>
 
-      {/* Second Section */}
-      <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-10 py-20 lg:pt-40">
-        <img
+      <div className="relative flex w-full flex-col lg:flex-row py-40">
+      <img
           src={line2}
           alt="Background"
-          className="absolute inset-x-1/3 w-3/4 h-auto md:-top-8 md:w-1/2 lg:-top-20 lg:w-1/3"
+          className="absolute inset-x-1/3 w-3/4 h-auto md:-top-8 md:w-1/2"
         />
         <StudioCard
           image1={coworkingSpace}
@@ -98,42 +99,47 @@ const Studios = () => {
         />
 
         {/* DIVIDER */}
-        <div className="h-1 w-20 mx-auto bg-secondColor lg:h-auto lg:w-0.5"></div>
+        <div className="divider h-1 w-20 mx-auto lg:divider-horizontal bg-secondColor lg:h-40 lg:w-0.5 lg:my-auto"></div>
 
         {/* CONTENT SECTION */}
         <img
           src={line3}
           alt="Background"
-          className="absolute w-3/4 h-auto md:-bottom-80 md:w-1/4 lg:-bottom-96 lg:w-1/4"
+          className="absolute w-3/4 h-auto md:-bottom-72 md:w-1/4"
         />
-        <img
+
+<img
           src={line4}
           alt="Background"
-          className="absolute right-0 w-3/4 h-auto md:-bottom-56 md:w-1/4 lg:-bottom-40 lg:w-1/6"
+          className="absolute right-0 w-3/4 h-auto md:-bottom-72 md:w-1/4"
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-5 lg:px-10">
+        <div className="card grid grid-cols-1 md:grid-cols-2">
+        
           {/* Image and Paragraph Section */}
-          <div className="order-2 md:order-1">
-            <div className="grid place-items-center lg:place-items-start">
-              <img
-                src={meetingRoom}
-                alt="Podcast Studio"
-                className="mb-8 w-48 lg:w-64"
-              />
-              <p className="text-white mb-8 text-sm text-center lg:text-left">
-                <b>WE HELP YOU TURN</b> ANY IDEA, NO MATTER HOW <br />
-                BIG OR SMALL, <b>INTO YOUR BEST WORK YET</b>
-              </p>
-              <a href="https://creocreatorclub.simplybook.me/v2/">
+          <div className="card rounded-box flex-grow ml-5">
+            <div className="flex flex-col">
+              {" "}
+            {/* Stack image and paragraph vertically */}
+                          <img
+                            src={meetingRoom}
+                            alt="Podcast Studio"
+                            className="mb-8 w-48"
+                          />
+                          <p className="text-white mb-9 text-sm">
+                          <b>WE HELP YOU TURN</b> ANY IDEA, NO MATTER HOW <br/>
+                          BIG OR SMALL, <b>INTO YOUR BEST WORK YET</b>
+                          </p>
+                          <a
+                            href="https://creocreatorclub.simplybook.me/v2/" // External link
+              >
                 <button className="bg-secondColor text-white py-2 px-4 hover:bg-opacity-80 transition duration-300 w-40">
                   BOOK YOUR ROOM NOW
                 </button>
               </a>
             </div>
           </div>
-          {/* Image Section */}
-          <div className="grid place-items-center order-2 md:order-2">
-            <img src={mr} className="w-80 h-auto" alt="Studio" />
+          <div>
+            <img src={mr} className="w-80 h-auto  mr-10" alt="Studio" />
           </div>
         </div>
       </div>

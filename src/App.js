@@ -7,6 +7,7 @@ import EquipmentCard from "./components/EquipmentCard";
 
 import eq1 from "./assets/equipments/eq1.png";
 import EquipmentsLayout from "./components/EquipmentsLayout";
+import Card from "./components/Card";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <CreatedToCreate />
       <Studios />
       <EquipmentsLayout />
+      <Card />
 
       {/* <div className="flex justify-center items-center h-screen">
       <div className="w-64 h-64">

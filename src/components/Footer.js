@@ -9,7 +9,7 @@ function Footer() {
         <img
           src={line}
           alt="Background"
-          className="absolute -top-24 left-0 w-3/4 h-auto md:-top-56 md:w-2/5"
+          className="absolute -top-20 left-0 w-3/4 h-auto md:-top-56 md:w-2/5"
         />
         <nav>
           <img
