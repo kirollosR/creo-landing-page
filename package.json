@@ -1,4 +1,5 @@
 {
+  "homepage": "https://kirollosr.github.io/creo-landing-page",
   "name": "creo-landing-page",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +14,8 @@
     "web-vitals": "^4.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,6 +42,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "daisyui": "^4.12.23",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4"
   }
