@@ -1,7 +1,6 @@
 import logo from "../assets/logo.svg";
 import line from "../assets/line-footer.svg";
 
-import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
