@@ -1,38 +1,38 @@
 import logo from "../assets/logo.svg";
 
-function Navbar() {
+
+const Navbar = () => {
   return (
-    <div className="navbar bg-[#1263B0] text-white font-poppins">
-      <div className="navbar-start">
-        <img
+    <nav className="flex items-center justify-between px-2 py-4 bg-[#1263B0] text-white shadow-md">
+      {/* Logo */}
+      <img
           src={logo}
-          className="w-16 md:w-40 ml-5 md:ml-28 my-5 md:my-10"
+          className="w-16 md:w-40 ml-5 md:ml-10 my-5 md:my-5"
           alt="logo"
         />
+
+      {/* Middle Link */}
+      <div>
+        <a
+          href="#studios"
+          className="text-lg font-medium hover:text-[#E96759] transition-colors"
+        >
+          STUDIOS
+        </a>
       </div>
-      <div className="navbar-center">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a className="text-base md:text-lg drop-shadow-lg hover:bg-transparent hover:text-[#E96759]">
-              STUDIOS
-            </a>
-          </li>
-        </ul>
+
+      {/* Right Link */}
+      <div className="mr-5 md:mr-10">
+        <a
+          href="https://creocreatorclub.simplybook.me/v2/"
+          className="text-lg font-medium hover:text-[#E96759] transition-colors"
+        >
+          RESERVATION
+        </a>
       </div>
-      <div className="navbar-end">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a
-              className="text-base md:text-lg mr-5 md:mr-28 drop-shadow-lg hover:bg-transparent hover:text-[#E96759]"
-              href="https://creocreatorclub.simplybook.me/v2/"
-            >
-              RESERVATION
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    </nav>
   );
-}
+};
 
 export default Navbar;
+
