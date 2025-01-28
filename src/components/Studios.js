@@ -23,12 +23,12 @@ const Studios = () => {
   return (
     <div className="bg-primeColor text-white font-poppins">
       {/* First Section */}
-      <div className="container mx-auto px-4 py-10 lg:py-20">
-        <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-8 lg:gap-10">
+      <div className="container mx-auto py-10 lg:py-20">
+        <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-8 lg:gap-5">
           <img
             src={line1}
             alt="Background"
-            className="absolute -top-6 left-0 w-5/6 h-auto md:-top-52 md:w-1/2 lg:-top-20 lg:w-1/3"
+            className="absolute -top-10 -left-32 w-5/6 h-auto md:-top-52 md:scale-200 lg:-top-10 lg:w-1/3"
           />
 
           <StudioCard
@@ -49,26 +49,25 @@ const Studios = () => {
           <div className="h-1 w-20 mx-auto bg-secondColor lg:h-auto lg:w-0.5"></div>
 
           {/* Photography Studio Section */}
-          <div className="container mx-auto">
-            <div className="flex flex-col md:grid md:grid-cols-2 gap-8 items-center">
-              {/* Image Section - Appears first on mobile */}
-              <div className="order-1 md:order-2 w-full flex justify-center">
+          <div className="container mx-auto px-4 z-10">
+            <div className="card flex flex-col md:grid md:grid-cols-2 gap-4 items-center">
+
+              <div className="order-1 md:order-2 w-5/6 md:w-full flex justify-center">
                 <img
                   src={phs}
-                  className="w-full max-w-[320px] h-auto"
+                  className="w-auto max-w-[320px] h-full"
                   alt="Studio"
                 />
               </div>
 
-              {/* Content Section */}
-              <div className="order-2 md:order-1 w-full">
-                <div className="flex flex-col items-center md:items-start">
+              <div className="order-2 md:order-1 w-5/6 md:w-full">
+                <div className="flex flex-col items-start md:items-start">
                   <img
                     src={photographyStudio}
-                    alt="Photography Studio"
-                    className="w-full max-w-[256px] mb-8"
+                    alt="Podcast Studio"
+                    className="w-5/6 md:w-full max-w-[256px] mb-8 md:pb-10"
                   />
-                  <p className="text-white mb-8 text-sm text-center md:text-left">
+                  <p className="text-white mb-8 text-xs md:text-sm text-start md:pb-10">
                     <b>A FULLY</b> EQUIPPED <b>STUDIO</b> WITH
                     <br />
                     <b>LIGHTING</b>, CAMERAS,{" "}
@@ -101,54 +100,66 @@ const Studios = () => {
             className="absolute inset-x-1/3 w-3/4 h-auto md:-top-8 md:w-1/2 lg:-top-20 lg:w-1/3"
           />
 
-          <StudioCard
-            image1={coworkingSpace}
-            image2={cs}
-            button={"SPACE"}
-            description={
-              <>
-                IT'S NOT JUST A WORKING SPACE <b>IT'S A CREATIVE HUB </b>
-              </>
-            }
-          />
+<div className="container mx-auto py-4 z-10">
+            <div className="card flex flex-col md:grid md:grid-cols-2 gap-4 items-center">
+
+              <div className="order-1 md:order-2 w-5/6 md:w-full flex justify-center">
+                <img
+                  src={cs}
+                  className="w-auto max-w-[320px] h-full"
+                  alt="Studio"
+                />
+              </div>
+
+              <div className="order-2 md:order-1 w-5/6 md:w-full">
+                <div className="flex flex-col items-start md:items-start">
+                  <img
+                    src={coworkingSpace}
+                    alt="Podcast Studio"
+                    className="w-5/6 md:w-3/4 max-w-[256px] mb-8 md:pb-10"
+                  />
+                  <p className="text-white mb-8 text-xs md:text-sm text-start md:pb-10">
+                  IT'S NOT JUST A WORKING SPACE <b>IT'S A CREATIVE HUB </b>
+                  </p>
+                  <a
+                    href="https://creocreatorclub.simplybook.me/v2/"
+                    className="inline-block"
+                  >
+                    <button className="bg-secondColor text-white py-2 px-4 hover:bg-opacity-80 transition duration-300 w-40">
+                      BOOK YOUR SPACE NOW
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
           {/* DIVIDER */}
           <div className="h-1 w-20 mx-auto bg-secondColor lg:h-auto lg:w-0.5"></div>
 
           {/* Meeting Room Section */}
-          <div className="container mx-auto relative">
-            <img
-              src={line3}
-              alt="Background"
-              className="absolute w-3/4 h-auto md:-bottom-80 md:w-1/4 lg:-bottom-96 lg:w-1/4"
-            />
-            <img
-              src={line4}
-              alt="Background"
-              className="absolute right-0 w-3/4 h-auto md:-bottom-56 md:w-1/4 lg:-bottom-40 lg:w-1/6"
-            />
+          <div className="container mx-auto py-4 z-10">
+            <div className="card flex flex-col md:grid md:grid-cols-2 gap-4 items-center">
 
-            <div className="flex flex-col md:grid md:grid-cols-2 gap-8 items-center">
-              {/* Image Section - Appears first on mobile */}
-              <div className="order-1 md:order-2 w-full flex justify-center">
+              <div className="order-1 md:order-2 w-5/6 md:w-full flex justify-center">
                 <img
                   src={mr}
-                  className="w-full max-w-[320px] h-auto"
+                  className="w-auto max-w-[320px] h-full"
                   alt="Studio"
                 />
               </div>
 
-              {/* Content Section */}
-              <div className="order-2 md:order-1 w-full">
-                <div className="flex flex-col items-center md:items-start">
+              <div className="order-2 md:order-1 w-5/6 md:w-full">
+                <div className="flex flex-col items-start md:items-start">
                   <img
                     src={meetingRoom}
-                    alt="Meeting Room"
-                    className="w-full max-w-[256px] mb-8"
+                    alt="Podcast Studio"
+                    className="w-5/6 md:w-3/4 max-w-[256px] mb-8"
                   />
-                  <p className="text-white mb-8 text-sm text-center md:text-left">
-                    <b>WE HELP YOU TURN</b> ANY IDEA, NO MATTER HOW <br />
-                    BIG OR SMALL, <b>INTO YOUR BEST WORK YET</b>
+                  <p className="text-white mb-8 text-xs md:text-sm text-start">
+                  <b>WE HELP YOU TURN</b> ANY IDEA, NO MATTER HOW <br/>
+                  BIG OR SMALL, <b>INTO YOUR BEST WORK YET</b>
                   </p>
                   <a
                     href="https://creocreatorclub.simplybook.me/v2/"

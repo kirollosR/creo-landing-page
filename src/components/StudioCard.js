@@ -3,25 +3,25 @@ import React from "react";
 const StudioCard = ({ image1, image2, button, description }) => {
   return (
     <div className="container mx-auto px-4 z-10">
-      <div className="card flex flex-col md:grid md:grid-cols-2 gap-8 items-center">
+      <div className="card flex flex-col md:grid md:grid-cols-2 gap-10 items-center md:px-1">
         {/* Image 2 will appear first on mobile */}
-        <div className="order-1 md:order-2 w-full flex justify-center">
+        <div className="order-1 md:order-2 w-5/6 md:w-full flex justify-center ">
           <img
             src={image2}
-            className="w-full max-w-[320px] h-auto"
+            className="w-auto max-w-[320px] h-full"
             alt="Studio"
           />
         </div>
 
         {/* Content Section */}
-        <div className="order-2 md:order-1 w-full">
-          <div className="flex flex-col items-center md:items-start">
+        <div className="order-2 md:order-1 w-5/6 md:w-full">
+          <div className="flex flex-col items-start md:items-start">
             <img
               src={image1}
               alt="Podcast Studio"
-              className="w-full max-w-[256px] mb-8"
+              className="w-5/6 md:w-full max-w-[256px] mb-8"
             />
-            <p className="text-white mb-8 text-sm text-center md:text-left">
+            <p className="text-white mb-8 text-xs md:text-sm text-start">
               {description}
             </p>
             <a
